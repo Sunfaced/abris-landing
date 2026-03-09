@@ -11,16 +11,15 @@ type Partner = {
 
 // Автоматически подхватываем все логотипы из assets/partners.
 // Если файлов нет, массив будет пустым, и слайдер покажет текстовые заглушки.
-const importedLogos = import.meta.glob<string, string, { default: string }>(
+const importedLogos = import.meta.glob(
   "../../assets/partners/*.{png,jpg,jpeg,svg}",
   {
     eager: true,
+    import: "default",
   },
-);
+) as Record<string, string>;
 
-const logoSources = Object.values(importedLogos).map(
-  (mod) => (mod as unknown as { default: string }).default,
-);
+const logoSources = Object.values(importedLogos);
 
 const partners: Partner[] =
   logoSources.length > 0
@@ -42,16 +41,6 @@ const PartnersSection: FC = () => {
     align: "start",
     duration: 60, // более плавное перелистывание
   });
-
-  const scrollPrev = () => {
-    if (!emblaApi) return;
-    emblaApi.scrollPrev();
-  };
-
-  const scrollNext = () => {
-    if (!emblaApi) return;
-    emblaApi.scrollNext();
-  };
 
   useEffect(() => {
     if (!emblaApi) return;
