@@ -1,0 +1,102 @@
+@use "../../styles/variables" as *;
+
+.section {
+  padding-block: $space-6;
+  background-color: #111827;
+}
+
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-inline: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: $space-4;
+}
+
+.carousel {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.viewport {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: $space-6;
+}
+
+.slide {
+  flex: 0 0 auto;
+}
+
+.partnerCard {
+  padding-inline: $space-4;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  transition:
+    background-color 150ms ease-out,
+    color 150ms ease-out;
+
+  img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(0.3) brightness(0.9);
+    opacity: 0.9;
+    transition:
+      filter 150ms ease-out,
+      opacity 150ms ease-out;
+  }
+
+  &:hover img {
+    filter: grayscale(0) brightness(1.1);
+    opacity: 1;
+  }
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: none;
+  background-color: rgba(15, 23, 42, 0.55);
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition:
+    background-color 150ms ease-out,
+    color 150ms ease-out;
+
+  &:hover {
+    background-color: rgba(15, 23, 42, 0.9);
+    color: #ffffff;
+  }
+}
+
+.buttonPrev {
+  left: 0;
+}
+
+.buttonNext {
+  right: 0;
+}

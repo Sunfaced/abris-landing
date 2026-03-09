@@ -1,0 +1,153 @@
+@use "../../styles/variables" as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: 64px;
+  padding-block: $space-3;
+  display: flex;
+  align-items: center;
+  background-color: rgba(245, 247, 250, 0.92);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.inner {
+  width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-4;
+}
+
+.logoBlock {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-3;
+}
+
+.logoLink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $space-1;
+  text-decoration: none;
+}
+
+.logo {
+  height: $logo-height;
+  width: auto;
+  display: block;
+
+  &:hover {
+    filter: grayscale(0) brightness(1.1);
+    opacity: 1;
+  }
+}
+.logoTextBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logoSubtitle {
+  font-size: 10px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: $space-4;
+}
+
+.navItem {
+}
+
+.navLink {
+  font-size: 14px;
+  font-weight: 500;
+  padding-block: $space-2;
+  padding-inline: $space-3;
+  padding-bottom: 6px;
+  text-decoration: none;
+  color: #111827;
+  border-bottom: 2px solid transparent;
+  border-radius: 999px;
+  transition:
+    color 150ms ease-out,
+    background-color 150ms ease-out,
+    border-color 150ms ease-out;
+
+  &:hover {
+    color: #1f4b8f;
+    border-bottom-color: rgba(31, 75, 143, 0.35);
+    background-color: rgba(15, 23, 42, 0.04);
+  }
+}
+
+.navLinkActive {
+  color: #1f4b8f;
+  border-bottom: 2px solid rgba(31, 75, 143, 0.9);
+  background-color: rgba(15, 23, 42, 0.02);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: $space-4;
+}
+
+.phoneBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.phone {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f4b8f;
+  text-decoration: none;
+}
+
+.phoneNote {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.ctaButton {
+  padding-inline: $space-4;
+  padding-block: $space-2;
+  border-radius: 8px;
+  border: none;
+  background-color: #1f4b8f;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 150ms ease-out,
+    transform 150ms ease-out,
+    box-shadow 150ms ease-out;
+
+  &:hover {
+    background: linear-gradient(135deg, #1f4b8f, #1ca8a8);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(31, 75, 143, 0.35);
+  }
+}
