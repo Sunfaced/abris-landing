@@ -2,20 +2,20 @@
 
 .section {
   padding-block: $space-6;
-  background-color: #111827;
+  background-color: $color-bg-footer;
 }
 
 .inner {
-  max-width: 1400px;
+  max-width: $container-max-width;
   margin: 0 auto;
-  padding-inline: 16px;
+  padding-inline: $container-padding-inline;
 }
 
 .title {
-  font-size: 24px;
+  font-size: $font-size-3xl;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: $color-text-on-dark;
   margin-bottom: $space-4;
 }
 
