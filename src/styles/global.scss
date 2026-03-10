@@ -20,8 +20,8 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  background-color: #f5f7fa;
-  color: #1e1e24;
+  background-color: $color-bg-page;
+  color: $color-text-main;
   -webkit-font-smoothing: antialiased;
 }
 

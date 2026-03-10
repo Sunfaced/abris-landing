@@ -1,3 +1,4 @@
+// Spacing scale
 $space-1: 4px;
 $space-2: 8px;
 $space-3: 12px;
@@ -6,4 +7,80 @@ $space-5: 24px;
 $space-6: 32px;
 $space-7: 40px;
 
+// Layout
+$container-max-width: 1400px;
+$container-padding-inline: 16px;
 $logo-height: 64px;
+
+// Colors
+$color-bg-page: #f5f7fa;
+$color-bg-surface: #ffffff;
+$color-bg-surface-soft: #f9fafb;
+$color-bg-footer: #111827;
+$color-bg-dark: #0f172a;
+
+$color-text-main: #1e1e24;
+$color-text-primary: #111827;
+$color-text-muted: #4b5563;
+$color-text-soft: #6b7280;
+$color-text-softer: #9ca3af;
+$color-text-on-dark: #ffffff;
+
+$color-border-subtle: #e5e7eb;
+$color-border-strong: #1f2937;
+$color-border-accent-soft: rgba(31, 75, 143, 0.22);
+
+$color-primary: #1f4b8f;
+$color-primary-soft: rgba(31, 75, 143, 0.35);
+$color-primary-strong: rgba(31, 75, 143, 0.9);
+$color-primary-alt: #1ca8a8;
+$color-accent-sky: #38bdf8;
+
+// Gradients
+$gradient-primary: linear-gradient(135deg, $color-primary, $color-primary-alt);
+$gradient-primary-alt: linear-gradient(135deg, $color-primary-alt, $color-accent-sky);
+$gradient-hero-bg: linear-gradient(
+  135deg,
+  rgba(31, 75, 143, 0.08),
+  rgba(28, 168, 168, 0.12)
+);
+
+// Radius
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 20px;
+$radius-xxl: 24px;
+$radius-pill: 999px;
+
+// Shadows
+$shadow-soft: 0 10px 24px rgba(15, 23, 42, 0.18);
+$shadow-card-soft: 0 10px 25px rgba(15, 23, 42, 0.04);
+$shadow-card-strong: 0 16px 30px rgba(15, 23, 42, 0.12);
+$shadow-card-stronger: 0 16px 30px rgba(15, 23, 42, 0.16);
+$shadow-hero: 0 18px 50px rgba(15, 23, 42, 0.18);
+$shadow-button-primary: 0 10px 30px rgba(31, 75, 143, 0.35);
+$shadow-button-primary-hover: 0 14px 40px rgba(31, 75, 143, 0.45);
+
+// Blur
+$blur-header: 4px;
+$blur-header-strong: 8px;
+$blur-glass-card: 14px;
+
+// Typography sizes (basic)
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-base: 14px;
+$font-size-md: 15px;
+$font-size-lg: 16px;
+$font-size-xl: 18px;
+$font-size-2xl: 22px;
+$font-size-3xl: 24px;
+$font-size-4xl: 32px;
+$font-size-5xl: 40px;
+$font-size-6xl: 64px;
+
+// Breakpoints
+$bp-sm: 768px;
+$bp-md: 900px;
+$bp-lg: 1024px;

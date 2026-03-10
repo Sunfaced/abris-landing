@@ -1,14 +1,16 @@
+@use "../../styles/variables" as *;
+
 .footer {
-  background-color: #111827;
-  color: #ffffff;
+  background-color: $color-bg-footer;
+  color: $color-text-on-dark;
   padding: 64px 0 32px;
-  margin-top: 40px;
+  margin-top: $space-7;
 }
 
 .inner {
   max-width: 1320px;
   margin: 0 auto;
-  padding-inline: 16px;
+  padding-inline: $container-padding-inline;
 
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -24,25 +26,25 @@
 }
 
 .column {
-  font-size: 14px;
+  font-size: $font-size-base;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: $font-size-3xl;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: $space-3;
 }
 
 .description {
-  color: #9ca3af;
+  color: $color-text-softer;
   line-height: 1.5;
   max-width: 260px;
 }
 
 .columnTitle {
-  font-size: 16px;
+  font-size: $font-size-lg;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: $space-4;
   color: #e5e7eb;
 }
 
@@ -52,17 +54,17 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: $space-2;
 }
 
 .link {
-  font-size: 14px;
-  color: #9ca3af;
+  font-size: $font-size-base;
+  color: $color-text-softer;
   text-decoration: none;
   transition: color 150ms ease-out;
 
   &:hover {
-    color: #38bdf8;
+    color: $color-accent-sky;
   }
 }
 
@@ -72,14 +74,14 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: $space-3;
 }
 
 .contactItem {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
-  color: #9ca3af;
+  gap: $space-2;
+  color: $color-text-softer;
 }
 
 .contactIcon {
@@ -89,16 +91,16 @@
 
 .bottom {
   max-width: 1320px;
-  margin: 32px auto 0;
-  padding-inline: 16px;
-  border-top: 1px solid #1f2937;
-  padding-top: 16px;
+  margin: $space-5 auto 0;
+  padding-inline: $container-padding-inline;
+  border-top: 1px solid $color-border-strong;
+  padding-top: $space-4;
 
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  font-size: 12px;
-  color: #6b7280;
+  gap: $space-3;
+  font-size: $font-size-sm;
+  color: $color-text-soft;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -110,6 +112,6 @@
 .bottomLinks {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: $space-4;
 }
 

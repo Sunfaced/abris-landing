@@ -2,13 +2,13 @@
 
 .section {
   padding-block: $space-6 * 2;
-  background-color: #ffffff;
+  background-color: $color-bg-surface;
 }
 
 .inner {
-  max-width: 1400px;
+  max-width: $container-max-width;
   margin: 0 auto;
-  padding-inline: 16px;
+  padding-inline: $container-padding-inline;
 }
 
 .header {
@@ -25,27 +25,27 @@
 }
 
 .title {
-  font-size: 32px;
+  font-size: $font-size-4xl;
   font-weight: 700;
   margin: 0 0 $space-2 0;
 
   @media (min-width: 900px) {
-    font-size: 40px;
+    font-size: $font-size-5xl;
   }
 }
 
 .subtitle {
-  font-size: 16px;
-  color: #6b7280;
+  font-size: $font-size-lg;
+  color: $color-text-soft;
   max-width: 640px;
   line-height: 1.5;
   font-weight: 600;
 }
 
 .allLink {
-  font-size: 16px;
+  font-size: $font-size-lg;
   font-weight: 600;
-  color: #1f4b8f;
+  color: $color-primary;
   text-decoration: none;
   margin-top: $space-2;
   display: inline-flex;
@@ -53,7 +53,7 @@
   gap: 4px;
 
   &:hover {
-    color: #1ca8a8;
+    color: $color-primary-alt;
   }
 }
 
@@ -72,16 +72,12 @@
 }
 
 .card {
-  background: linear-gradient(
-    135deg,
-    rgba(31, 75, 143, 0.08),
-    rgba(28, 168, 168, 0.12)
-  );
+  background: $gradient-hero-bg;
   height: 100%;
-  border-radius: 20px;
+  border-radius: $radius-xl;
   padding: $space-5;
-  border: 1px solid #e5e7eb;
-  background-color: #ffffff;
+  border: 1px solid $color-border-subtle;
+  background-color: $color-bg-surface;
   display: flex;
   flex-direction: column;
   gap: $space-3;
@@ -92,16 +88,16 @@
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
-    border-color: rgba(31, 75, 143, 0.35);
+    box-shadow: $shadow-card-strong;
+    border-color: $color-primary-soft;
   }
 }
 
 .iconCircle {
   width: 100px;
   height: 100px;
-  border-radius: 18px;
-  background-color: #f5f7fa;
+  border-radius: $radius-lg;
+  background-color: $color-bg-page;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +105,7 @@
 }
 
 .iconImg {
-  border-radius: 18px;
+  border-radius: $radius-lg;
   transition: transform 220ms ease-out;
 }
 
@@ -118,28 +114,28 @@
 }
 
 .iconLetter {
-  font-size: 20px;
+  font-size: $font-size-xl;
   font-weight: 700;
-  color: #1f4b8f;
+  color: $color-primary;
 }
 
 .cardTitle {
-  font-size: 18px;
+  font-size: $font-size-xl;
   font-weight: 700;
 }
 
 .cardText {
-  font-size: 15px;
-  color: #4b5563;
+  font-size: $font-size-md;
+  color: $color-text-muted;
   line-height: 1.5;
   flex: 1;
 }
 
 .cardLink {
   margin-top: $space-3;
-  font-size: 16px;
+  font-size: $font-size-lg;
   font-weight: 600;
-  color: #1f4b8f;
+  color: $color-primary;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -148,12 +144,12 @@
   padding-top: $space-3;
 
   &:hover {
-    color: #1ca8a8;
+    color: $color-primary-alt;
   }
 }
 
 .arrow {
-  font-size: 24px;
+  font-size: $font-size-3xl;
   transition: transform 150ms ease-out;
 }
 
